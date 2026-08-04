@@ -1,0 +1,137 @@
+# Requirement Analysis – StudentHub Portal
+
+## 1. Introduction
+
+**StudentHub** is an online student management system developed to make academic and campus-related activities more organized and accessible. The portal allows students to access important information such as attendance records, examination results, fee details, certificates, events, and personal profile through a single platform. It also improves communication between students and the institution by providing feedback and contact facilities.
+
+---
+
+## Functional Requirements
+
+### 1. User Authentication
+
+* Student login using a unique Student ID and password.
+* Secure logout functionality.
+* User session management to prevent unauthorized access.
+
+### 2. Dashboard
+
+* Personalized welcome message after login.
+* Display of important announcements and notifications.
+* Quick access to major modules.
+* Overview of upcoming college events.
+
+### 3. Student Profile
+
+* View personal and academic information.
+* Display department, semester, enrollment number, and contact details.
+* Upload or update profile picture.
+
+### 4. Attendance Management
+
+* Show subject-wise attendance records.
+* Calculate attendance percentage automatically.
+* Highlight attendance status based on college criteria.
+
+### 5. Academic Results
+
+* Display semester-wise examination results.
+* Show SGPA and CGPA.
+* Present marks obtained in each subject.
+
+### 6. Certificate Management
+
+* List available academic certificates.
+* Allow certificate download.
+* Show certificate approval or availability status.
+
+### 7. Fee Information
+
+* Display complete fee structure.
+* Show paid and pending fee amounts.
+* Provide payment status for each semester.
+
+### 8. Events
+
+* Display current and upcoming college events.
+* Show event date, venue, and description.
+* Allow students to register for events.
+
+### 9. Feedback System
+
+* Submit suggestions and feedback.
+* Provide rating for college services.
+* Store feedback for administrative review.
+
+### 10. Contact Information
+
+* Display official college contact details.
+* Provide email address and phone number.
+* Show college location and address.
+
+---
+
+## Non-Functional Requirements
+
+### Performance
+
+* Pages should load efficiently with minimal delay.
+* The system should handle multiple users smoothly.
+
+### Security
+
+* Passwords must remain protected.
+* Secure login and session handling should be implemented.
+* Access should be restricted to authenticated users only.
+
+### Usability
+
+* Simple and intuitive user interface.
+* Responsive layout for different screen sizes.
+* Easy navigation across all pages.
+
+### Reliability
+
+* Information displayed should be accurate and updated.
+* The system should remain stable during normal operation.
+
+### Compatibility
+
+* Compatible with modern browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge.
+* Accessible from desktops, laptops, tablets, and smartphones.
+
+### Maintainability
+
+* Well-structured project files.
+* Reusable CSS and HTML components.
+* Easy to update and maintain in the future.
+
+---
+
+## Software Requirements
+
+### Frontend
+
+* HTML5
+* CSS3
+
+### Backend
+
+* PHP
+
+### Database
+
+* MySQL
+
+### Development Tools
+
+* Visual Studio Code
+* XAMPP
+* phpMyAdmin
+* Git
+* GitHub
+
+### Operating System
+
+* Windows 10 or Windows 11
+
