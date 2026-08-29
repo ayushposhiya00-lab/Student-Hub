@@ -1,75 +1,217 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 20px;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-    color:#333;
-    
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header */
+/* =========================
+   DARK MODE
+========================= */
 
-header{
-     background:#5265f9;   /* Light Yellow */
-    text-align:center;
-    padding:25px;
-    border-bottom:4px solid #5c47f9;
+body.dark-mode {
+    background: #121212;
+    color: #eeeeee;
 }
 
-header img{
-    width:270px;
-    height:100px;
-    border-radius:10px;   /* Square with slightly rounded corners */
-    background:white;
-    padding:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    margin-bottom:10px;
+body.dark-mode header {
+    background: #252525;
+    border-bottom-color: #444;
 }
 
-header h1{
-    margin-top:10px;
-    color:#222;
-    font-size:45px;
+body.dark-mode header h1 {
+    color: #ffffff;
 }
 
-header p{
-    color:#373030;
-    font-size:25px;
+body.dark-mode header p {
+    color: #dddddd;
 }
 
-/* Navigation */
-nav{
-    background:#333;
-    padding:15px;
-    text-align:center;
-    
+body.dark-mode nav {
+    background: #000000;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:20px;
-    font-weight:bold;
+body.dark-mode nav a {
+    color: #ffffff;
 }
 
-nav a:hover{
-    color:#FFD54F;
-}
-/* Marquee */
-
-marquee{
-    background:#fff8dc;
-    color:#222;
-    padding:10px;
-    font-weight:bold;
+body.dark-mode marquee {
+    background: #292929;
+    color: #ffffff;
 }
 
+body.dark-mode .main {
+    background: #1e1e1e;
+    color: #eeeeee;
+}
+
+body.dark-mode .search input {
+    background: #2a2a2a;
+    color: #ffffff;
+    border-color: #555;
+}
+
+body.dark-mode .search input::placeholder {
+    color: #bbbbbb;
+}
+
+body.dark-mode .search i {
+    color: #bbbbbb;
+}
+
+body.dark-mode .welcome p {
+    color: #bbbbbb;
+}
+
+body.dark-mode .card {
+    background: #292929;
+    color: #eeeeee;
+}
+
+body.dark-mode .card p {
+    color: #bbbbbb;
+}
+
+body.dark-mode .box {
+    background: #252525;
+    border-color: #444;
+    color: #eeeeee;
+}
+
+body.dark-mode .box h2,
+body.dark-mode .activity h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .box a {
+    color: #eeeeee;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .box ul li,
+body.dark-mode .activity ul li {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .activity {
+    background: #252525;
+    border-color: #444;
+}
+
+body.dark-mode footer {
+    color: #bbbbbb;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+#themeBtn {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: #222;
+    color: white;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+#themeBtn:hover {
+    transform: scale(1.05);
+}
+
+body.dark-mode #themeBtn {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #5265f9;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #5c47f9;
+    transition: background-color 0.3s ease;
+}
+
+header img {
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-top: 10px;
+    color: #222;
+    font-size: 45px;
+}
+
+header p {
+    color: #373030;
+    font-size: 25px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD54F;
+}
+
+
+/* =========================
+   MARQUEE
+========================= */
+
+marquee {
+    background: #fff8dc;
+    color: #222;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
     width: 100%;
@@ -83,7 +225,13 @@ marquee{
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+/* =========================
+   TOPBAR
+========================= */
 
 .topbar {
     display: flex;
@@ -104,6 +252,11 @@ marquee{
     border-radius: 25px;
     outline: none;
     width: 250px;
+    transition: 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #5468ff;
 }
 
 .search i {
@@ -127,6 +280,11 @@ marquee{
     border-radius: 50%;
 }
 
+
+/* =========================
+   WELCOME
+========================= */
+
 .welcome {
     text-align: center;
     margin-bottom: 25px;
@@ -142,6 +300,11 @@ marquee{
     font-size: 18px;
 }
 
+
+/* =========================
+   CARDS
+========================= */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, minmax(240px, 1fr));
@@ -154,13 +317,18 @@ marquee{
     border-radius: 15px;
     padding: 22px;
     min-height: 150px;
-    min-width: 80px;   /* Box ki height badh gayi */
+    min-width: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* Content center me rahega */
+    justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card i {
@@ -179,6 +347,11 @@ marquee{
     font-weight: 500;
 }
 
+
+/* =========================
+   DASHBOARD CONTENT
+========================= */
+
 .dashboard-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,12 +359,18 @@ marquee{
     margin-bottom: 25px;
 }
 
+
+/* =========================
+   BOX
+========================= */
+
 .box {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .box h2,
@@ -206,6 +385,12 @@ marquee{
     color: #222;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
+    transition: 0.3s ease;
+}
+
+.box a:hover {
+    padding-left: 8px;
+    color: #5468ff;
 }
 
 .box a:last-child {
@@ -228,6 +413,11 @@ marquee{
     border-bottom: 1px solid #eee;
 }
 
+
+/* =========================
+   RECENT ACTIVITY
+========================= */
+
 .activity {
     background: #fff;
     border: 1px solid #eee;
@@ -235,7 +425,13 @@ marquee{
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
     margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     text-align: center;
@@ -243,7 +439,13 @@ footer {
     padding-top: 10px;
 }
 
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
+
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -251,9 +453,12 @@ footer {
     .dashboard-content {
         grid-template-columns: 1fr;
     }
+
 }
 
+
 @media (max-width: 600px) {
+
     .cards {
         grid-template-columns: 1fr;
     }
@@ -269,4 +474,39 @@ footer {
     .search input {
         width: 100%;
     }
+    #notification {
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ffeeba;
+}
+
+#closeNotification {
+    margin-left: 20px;
+    border: none;
+    background: transparent;
+    color: #856404;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+body.dark-mode #notification {
+    background: #2b2b2b;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode #closeNotification {
+    color: #ffffff;
+}
+
+    #themeBtn {
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
 }
