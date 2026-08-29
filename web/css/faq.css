@@ -1,176 +1,515 @@
-/* faq.css */
+/* =========================
+   FAQ CSS
+========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 20px;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-    color:#333;
-    
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f5f5;
+
+    color: #333;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
-/* Header */
 
-header{
-     background:#5265f9;   /* Light Yellow */
-    text-align:center;
-    padding:25px;
-    border-bottom:4px solid #5c47f9;
-}
+/* =========================
+   HEADER
+========================= */
 
-header img{
-    width:270px;
-    height:100px;
-    border-radius:10px;   /* Square with slightly rounded corners */
-    background:white;
-    padding:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    margin-bottom:10px;
-}
+header {
+    background: #5265f9;
 
-header h1{
-    margin-top:10px;
-    color:#222;
-    font-size:45px;
-}
+    text-align: center;
 
-header p{
-    color:#373030;
-    font-size:25px;
-}
-
-/* Navigation */
-nav{
-    background:#333;
-    padding:15px;
-    text-align:center;
-    
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:20px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#FFD54F;
-}
-/* Marquee */
-
-marquee{
-    background:#fff8dc;
-    color:#222;
-    padding:10px;
-    font-weight:bold;
-}
-
-/* FAQ Main Heading Box */
-main > h2 {
-    background: white;
-    width: 60%;
-    margin: 25px auto;
     padding: 25px;
+
+    border-bottom: 4px solid #5c47f9;
+
+    transition: background-color 0.3s ease;
+}
+
+
+header img {
+    width: 270px;
+
+    height: 100px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    padding: 8px;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2);
+
+    margin-bottom: 10px;
+}
+
+
+header h1 {
+    margin-top: 10px;
+
+    color: #222;
+
+    font-size: 45px;
+}
+
+
+header p {
+    color: #373030;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: #333;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 12px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #FFD54F;
+}
+
+
+/* =========================
+   MARQUEE
+========================= */
+
+marquee {
+    background: #fff8dc;
+
+    color: #222;
+
+    padding: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FAQ MAIN HEADING
+========================= */
+
+main > h2 {
+
+    background: white;
+
+    width: 60%;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
     text-align: center;
 
     border-left: 5px solid #5265f9;
+
     border-radius: 10px;
 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.15);
 
     color: #222;
+
     font-size: 30px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 
-/* Each FAQ Question Box */
+/* =========================
+   FAQ ARTICLE
+========================= */
+
 article {
+
     background: white;
+
     padding: 20px;
+
     margin: 20px 0;
 
     border-left: 5px solid #5265f9;
+
     border-radius: 10px;
 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.15);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 
-/* Question */
-article h3 {
+/* =========================
+   FAQ QUESTION BUTTON
+========================= */
+
+.faq-question {
+
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    text-align: left;
+
+    cursor: pointer;
+
     color: #222;
+
     font-size: 22px;
-    margin-bottom: 12px;
+
+    font-weight: bold;
+
+    padding: 5px;
+
+    transition: color 0.3s ease;
 }
 
 
-/* Answer */
-article p {
+.faq-question:hover {
+
+    color: #5265f9;
+
+}
+
+
+/* =========================
+   FAQ ANSWER
+========================= */
+
+.faq-answer {
+
+    display: none;
+
     color: #333;
+
     font-size: 20px;
+
     line-height: 1.6;
+
+    margin-top: 12px;
+
+    padding: 10px;
+
+    border-top: 1px solid #eee;
 }
 
-/* Footer */
 
-footer{
- background:#5265f9;
-    color:#222;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:30px;
-    border-top:4px solid  #5265f9;;
+/* Answer show hone par */
+
+.faq-answer.show {
+
+    display: block;
+
 }
 
-footer h2{
-    color:#000;
-    margin-bottom:10px;
-}
 
-footer p{
-    color:#333;
-    margin:8px 0;
-}
-
-footer a{
-    color:#0d47a1;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-footer a:hover{
-    color:#000;
-    text-decoration:underline;
-}
-/* Footer Navigation Buttons */
+/* =========================
+   FOOTER LINKS
+========================= */
 
 .footer-links {
+
     text-align: center;
+
     margin: 25px 0;
 }
 
+
 .footer-links a {
+
     display: inline-block;
+
     background: #5265f9;
+
     color: white;
+
     padding: 12px 25px;
+
     margin: 0 8px;
+
     border-radius: 8px;
+
     text-decoration: none;
+
     font-size: 18px;
+
     font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.2);
+
+    transition: 0.3s ease;
 }
 
+
 .footer-links a:hover {
+
     background: #3f51d9;
+
     color: white;
+
     text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #5265f9;
+
+    color: #222;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 30px;
+
+    border-top: 4px solid #5265f9;
+
+    transition: background-color 0.3s ease;
+}
+
+
+footer h2 {
+
+    color: #000;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+
+    color: #333;
+
+    margin: 8px 0;
+}
+
+
+footer a {
+
+    color: #0d47a1;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+footer a:hover {
+
+    color: #000;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+
+    background: #121212;
+
+    color: #eeeeee;
+}
+
+
+body.dark-mode header {
+
+    background: #252525;
+
+    border-bottom-color: #444;
+}
+
+
+body.dark-mode header h1 {
+
+    color: white;
+}
+
+
+body.dark-mode header p {
+
+    color: #dddddd;
+}
+
+
+body.dark-mode nav {
+
+    background: #000;
+}
+
+
+body.dark-mode nav a {
+
+    color: white;
+}
+
+
+body.dark-mode marquee {
+
+    background: #292929;
+
+    color: white;
+}
+
+
+body.dark-mode main > h2 {
+
+    background: #1e1e1e;
+
+    color: white;
+}
+
+
+body.dark-mode article {
+
+    background: #1e1e1e;
+
+    color: #eeeeee;
+
+    border-left-color: #5265f9;
+}
+
+
+body.dark-mode .faq-question {
+
+    color: white;
+}
+
+
+body.dark-mode .faq-question:hover {
+
+    color: #8c99ff;
+}
+
+
+body.dark-mode .faq-answer {
+
+    color: #dddddd;
+
+    border-top-color: #444;
+}
+
+
+body.dark-mode footer {
+
+    background: #252525;
+
+    color: white;
+
+    border-top-color: #444;
+}
+
+
+body.dark-mode footer h2 {
+
+    color: white;
+}
+
+
+body.dark-mode footer p {
+
+    color: #dddddd;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    main > h2 {
+
+        width: 90%;
+
+        font-size: 26px;
+
+    }
+
+
+    article {
+
+        margin: 15px 10px;
+
+    }
+
+
+    .faq-question {
+
+        font-size: 19px;
+
+    }
+
+
+    .faq-answer {
+
+        font-size: 18px;
+
+    }
+
+
+    nav a {
+
+        display: inline-block;
+
+        margin: 5px;
+
+        font-size: 16px;
+
+    }
+
 }
