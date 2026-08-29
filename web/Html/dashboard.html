@@ -3,146 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>StudentHub Dashboard</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="stylesheet" href="deshboard.css">
 </head>
+
 <body>
 
+    <!-- Dark / Light Mode Button -->
+    <button id="themeBtn">
+        🌙 Dark Mode
+    </button>
+
+
+    <!-- ================= HEADER ================= -->
+
     <header>
+        <div id="notification">
+    📢 Important Notice: Hackathon Registration is Open!
+    <button id="closeNotification">✕</button>
+</div>
 
-<center>
+        <center>
 
-<img src="https://admission.charusat.ac.in/View%20Assets/MainPage/assets/charusat%20images/logo.png" alt="StudentHub Logo" width="120">
+            <img src="https://admission.charusat.ac.in/View%20Assets/MainPage/assets/charusat%20images/logo.png"
+                 alt="StudentHub Logo"
+                 width="120">
 
-<h1>StudentHub Portal</h1>
-<br>
-<p><b>Empowering Students Through Technology</b></p>
-<br>
+            <h1>StudentHub Portal</h1>
 
-</center>
+            <br>
 
+            <p>
+                <b>Empowering Students Through Technology</b>
+            </p>
 
+            <br>
 
-<nav>
-
-<center>
-
-<a href="home.html">Home</a> 
-<a href="about.html">About</a> 
-<a href="register.html">Register</a> 
-<a href="login.html">Login</a> 
-<a href="dashboard.html">Dashboard</a> 
-<a href="events.html">Events</a> 
-<a href="profile.html">Profile</a> 
-<a href="contact.html">Contact</a> 
-<a href="admin.html">Admin</a> 
-<a href="faq.html">FAQ</a> 
-<a href="feedback.html">Feedback</a>
-
-</center>
-
-</nav>
+        </center>
 
 
+        <!-- ================= NAVIGATION ================= -->
 
-<marquee>
-Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
-</marquee>
+        <nav>
+
+            <center>
+
+                <a href="home.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="register.html">Register</a>
+
+                <a href="login.html">Login</a>
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="profile.html">Profile</a>
+
+                <a href="contact.html">Contact</a>
+
+                <a href="admin.html">Admin</a>
+
+                <a href="faq.html">FAQ</a>
+
+                <a href="feedback.html">Feedback</a>
+
+            </center>
+
+        </nav>
+
+
+        <!-- ================= MARQUEE ================= -->
+
+        <marquee>
+
+            Admission Open 2026 •
+            AI Workshop Registration Started •
+            National Hackathon Registration Open •
+            Semester Examination Timetable Released
+
+        </marquee>
+
+    </header>
 
 
 
-</header>
+    <!-- ================= MAIN CONTAINER ================= -->
 
     <div class="container">
+
         <div class="main">
+
+
+            <!-- ================= TOP BAR ================= -->
+
             <div class="topbar">
+
                 <div class="search">
-                    <input type="text" placeholder="Search...">
+
+                    <input type="text"
+                           placeholder="Search...">
+
                     <i class="fa-solid fa-magnifying-glass"></i>
+
                 </div>
+
 
                 <div class="user">
+
                     <i class="fa-solid fa-bell"></i>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User">
-                    <span>Krish Varsani</span>
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                         alt="User">
+
+                    <span>Ayush Poshiya</span>
+
                 </div>
+
             </div>
+
+
+
+            <!-- ================= WELCOME ================= -->
 
             <div class="welcome">
-                <h1>Welcome Back 👋</h1>
-                <p>B.Tech Computer Science Engineering</p>
+
+                <h1>
+                    Welcome Back 👋
+                </h1>
+
+                <p>
+                    B.Tech Computer Engineering
+                </p>
+
             </div>
+
+
+
+            <!-- ================= DASHBOARD CARDS ================= -->
 
             <div class="cards">
+
+
                 <div class="card">
+
                     <i class="fa-solid fa-user-check"></i>
-                    <h2>96%</h2>
-                    <p>Attendance</p>
+
+                    <h2>
+                        96%
+                    </h2>
+
+                    <p>
+                        Attendance
+                    </p>
+
                 </div>
 
+
+
                 <div class="card">
+
                     <i class="fa-solid fa-graduation-cap"></i>
-                    <h2>8.75</h2>
-                    <p>CGPA</p>
+
+                    <h2>
+                        8.75
+                    </h2>
+
+                    <p>
+                        CGPA
+                    </p>
+
                 </div>
 
+
+
                 <div class="card">
+
                     <i class="fa-solid fa-book"></i>
-                    <h2>7</h2>
-                    <p>Assignments</p>
+
+                    <h2>
+                        7
+                    </h2>
+
+                    <p>
+                        Assignments
+                    </p>
+
                 </div>
 
+
+
                 <div class="card">
+
                     <i class="fa-solid fa-diagram-project"></i>
-                    <h2>3</h2>
-                    <p>Projects</p>
+
+                    <h2>
+                        3
+                    </h2>
+
+                    <p>
+                        Projects
+                    </p>
+
                 </div>
+
             </div>
+
+
+
+            <!-- ================= DASHBOARD CONTENT ================= -->
 
             <div class="dashboard-content">
+
+
+                <!-- QUICK LINKS -->
+
                 <div class="left-panel">
+
                     <div class="box">
-                        <h2>Quick Links</h2>
-                        <a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a>
-                        <a href="attendance.html"><i class="fa-solid fa-calendar-check"></i> Attendance</a>
-                        <a href="result.html"><i class="fa-solid fa-square-poll-vertical"></i> Results</a>
-                        <a href="fees.html"><i class="fa-solid fa-wallet"></i> Fees</a>
-                        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignments</a>
+
+                        <h2>
+                            Quick Links
+                        </h2>
+
+
+                        <a href="profile.html">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            My Profile
+
+                        </a>
+
+
+                        <a href="attendance.html">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            Attendance
+
+                        </a>
+
+
+                        <a href="result.html">
+
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+
+                            Results
+
+                        </a>
+
+
+                        <a href="fees.html">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                            Fees
+
+                        </a>
+
+
+                        <a href="assignment.html">
+
+                            <i class="fa-solid fa-book"></i>
+
+                            Assignments
+
+                        </a>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- LATEST NOTICES -->
 
                 <div class="right-panel">
+
                     <div class="box">
-                        <h2>Latest Notices</h2>
+
+                        <h2>
+                            Latest Notices
+                        </h2>
+
+
                         <ul>
-                            <li>📢 Internal Exam starts from 10 August.</li>
-                            <li>📢 Semester Project Submission: 20 August.</li>
-                            <li>📢 Hackathon Registration is Open.</li>
-                            <li>📢 Library will remain closed on Sunday.</li>
+
+                            <li>
+                                📢 Internal Exam starts from 10 August.
+                            </li>
+
+                            <li>
+                                📢 Semester Project Submission: 20 August.
+                            </li>
+
+                            <li>
+                                📢 Hackathon Registration is Open.
+                            </li>
+
+                            <li>
+                                📢 Library will remain closed on Sunday.
+                            </li>
+
                         </ul>
+
                     </div>
+
                 </div>
+
             </div>
+
+
+
+            <!-- ================= RECENT ACTIVITY ================= -->
 
             <div class="activity">
-                <h2>Recent Activity</h2>
+
+                <h2>
+                    Recent Activity
+                </h2>
+
+
                 <ul>
-                    <li>✅ Assignment 7 Submitted Successfully</li>
-                    <li>✅ Attendance Updated</li>
-                    <li>✅ Semester Fees Paid</li>
-                    <li>✅ New Result Published</li>
-                    <li>✅ New Notice Added</li>
+
+                    <li>
+                        ✅ Assignment 7 Submitted Successfully
+                    </li>
+
+                    <li>
+                        ✅ Attendance Updated
+                    </li>
+
+                    <li>
+                        ✅ Semester Fees Paid
+                    </li>
+
+                    <li>
+                        ✅ New Result Published
+                    </li>
+
+                    <li>
+                        ✅ New Notice Added
+                    </li>
+
                 </ul>
+
             </div>
 
+
+
+            <!-- ================= FOOTER ================= -->
+
             <footer>
-                <p>© 2026 StudentHub | All Rights Reserved</p>
+
+                <p>
+                    © 2026 StudentHub | All Rights Reserved
+                </p>
+
             </footer>
+
         </div>
+
     </div>
+
+
+
+    <!-- Common JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
