@@ -157,6 +157,67 @@ main > h2 {
 
 
 /* =========================
+   FAQ CONTROLS (SEARCH / FILTER)
+========================= */
+
+.faq-controls {
+
+    width: 60%;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    justify-content: center;
+}
+
+
+.faq-controls input,
+.faq-controls select {
+
+    padding: 10px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.faq-controls input {
+
+    flex: 1;
+
+    min-width: 200px;
+}
+
+
+.faq-status {
+
+    text-align: center;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+
+.no-faqs {
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+/* =========================
    FAQ ARTICLE
 ========================= */
 
@@ -444,6 +505,23 @@ body.dark-mode .faq-answer {
 }
 
 
+body.dark-mode .faq-controls input,
+body.dark-mode .faq-controls select {
+
+    background: #1e1e1e;
+
+    color: #eeeeee;
+
+    border-color: #444;
+}
+
+
+body.dark-mode .faq-status {
+
+    color: #cccccc;
+}
+
+
 body.dark-mode footer {
 
     background: #252525;
@@ -477,6 +555,13 @@ body.dark-mode footer p {
         width: 90%;
 
         font-size: 26px;
+
+    }
+
+
+    .faq-controls {
+
+        width: 90%;
 
     }
 
