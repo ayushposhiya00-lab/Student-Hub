@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub | Events</title>
 
-    <link rel="stylesheet" href="events.css">
 
+    <link rel="stylesheet" href="events.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet"
@@ -57,193 +57,29 @@ Admission Open 2026 • AI Workshop Registration Started • National Hackathon 
 
 </header>
 
-<section class="events">
+<section class="events-controls">
 
-    <div class="event-card">
+    <input type="text" id="eventSearch" placeholder="Search events...">
 
-        <div class="date">
-            <h2>10</h2>
-            <span>AUG</span>
-        </div>
+    <select id="eventCategoryFilter">
+        <option value="all">All Categories</option>
+    </select>
 
-        <div class="details">
+    <select id="eventSort">
+        <option value="date-asc">Date (Earliest First)</option>
+        <option value="date-desc">Date (Latest First)</option>
+        <option value="title-asc">Title (A-Z)</option>
+    </select>
 
-            <h3>Hackathon 2026</h3>
+</section>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Computer Department
-            </p>
+<p id="eventsStatus" class="events-status"></p>
 
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                10:00 AM
-            </p>
+<section class="events" id="eventsContainer">
 
-            <p>
-                24-Hour Coding Competition with exciting prizes.
-            </p>
+</section>
 
-            <a href="#">Register</a>
-
-        </div>
-
-    </div>
-
-    <div class="event-card">
-
-        <div class="date">
-            <h2>15</h2>
-            <span>AUG</span>
-        </div>
-
-        <div class="details">
-
-            <h3>Independence Day Celebration</h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Main Ground
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                8:00 AM
-            </p>
-
-            <p>
-                Flag Hoisting, Cultural Program and Speech.
-            </p>
-
-            <a href="#">View Details</a>
-
-        </div>
-
-    </div>
-
-    <div class="event-card">
-
-        <div class="date">
-            <h2>20</h2>
-            <span>AUG</span>
-        </div>
-
-        <div class="details">
-
-            <h3>Web Development Workshop</h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Seminar Hall
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                11:00 AM
-            </p>
-
-            <p>
-                Learn HTML, CSS and JavaScript from industry experts.
-            </p>
-
-            <a href="#">Register</a>
-
-        </div>
-
-    </div>
-
-    <div class="event-card">
-
-        <div class="date">
-            <h2>25</h2>
-            <span>AUG</span>
-        </div>
-
-        <div class="details">
-
-            <h3>Sports Tournament</h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Sports Complex
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                9:00 AM
-            </p>
-
-            <p>
-                Cricket, Football, Volleyball and Indoor Games.
-            </p>
-
-            <a href="#">Participate</a>
-
-        </div>
-
-    </div>
-
-    <div class="event-card">
-
-        <div class="date">
-            <h2>30</h2>
-            <span>AUG</span>
-        </div>
-
-        <div class="details">
-
-            <h3>Placement Training</h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Auditorium
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                2:00 PM
-            </p>
-
-            <p>
-                Aptitude, Resume Building and Interview Preparation.
-            </p>
-
-            <a href="#">Join Now</a>
-
-        </div>
-
-    </div>
-
-    <div class="event-card">
-
-        <div class="date">
-            <h2>05</h2>
-            <span>SEP</span>
-        </div>
-
-        <div class="details">
-
-            <h3>Teacher's Day Celebration</h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Auditorium
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-                10:30 AM
-            </p>
-
-            <p>
-                Cultural performances and award ceremony.
-            </p>
-
-            <a href="#">View Details</a>
-
-        </div>
-
-    </div>
+<section class="events-pagination" id="eventsPagination">
 
 </section>
 
@@ -252,6 +88,8 @@ Admission Open 2026 • AI Workshop Registration Started • National Hackathon 
     <p>© 2026 StudentHub | All Rights Reserved</p>
 
 </footer>
+
+<script src="events-data.js"></script>
 
 </body>
 </html>
