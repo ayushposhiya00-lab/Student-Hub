@@ -2,132 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Profile</title>
-    <link rel="stylesheet" href="edit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Events</title>
+
+
+    <link rel="stylesheet" href="events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
 <header>
 
 <center>
 
-<img src="https://admission.charusat.ac.in/View%20Assets/MainPage/assets/charusat%20images/logo.png" alt="StudentHub Logo" width="270" height="100">
+<img src="https://admission.charusat.ac.in/View%20Assets/MainPage/assets/charusat%20images/logo.png" alt="StudentHub Logo" width="120">
 
-<h1 style ="color:black" >StudentHub Portal</h1>
+<h1>StudentHub Events</h1>
 
-<p><b>Empowering Students Through Technology</b></p>
+    <p>Stay Updated With Upcoming College Events</p>
+    
+
+</center>
+<br><br>
+<nav>
+
+<center>
+
+<a href="home.html">Home</a> 
+<a href="about.html">About</a> 
+<a href="register.html">Register</a> 
+<a href="login.html">Login</a> 
+<a href="dashboard.html">Dashboard</a> 
+<a href="events.html">Events</a> 
+<a href="profile.html">Profile</a> 
+<a href="contact.html">Contact</a> 
+<a href="admin.html">Admin</a> 
+<a href="faq.html">FAQ</a> 
+<a href="feedback.html">Feedback</a>
 
 </center>
 
+</nav>
 
+
+<hr>
+<marquee>
+Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
+</marquee>
 
 
 
 </header>
 
-    <h1 align="center" style="color:black"> Edit Profile</h1>
-    <form>
+<section class="events-controls">
 
-        <table cellpadding="8">
+    <input type="text" id="eventSearch" placeholder="Search events...">
 
-            <tr>
-                <td>Full Name : </td>
-                <td>
-                    <input type="text" value="Krish Varsani">
-                </td>
-            </tr>
+    <select id="eventCategoryFilter">
+        <option value="all">All Categories</option>
+    </select>
 
-            <tr>
-                <td>Student ID : </td>
-                <td>
-                    <input type="text" value="25DCS140" readonly>
-                </td>
-            </tr>
+    <select id="eventSort">
+        <option value="date-asc">Date (Earliest First)</option>
+        <option value="date-desc">Date (Latest First)</option>
+        <option value="title-asc">Title (A-Z)</option>
+    </select>
 
-            <tr>
-                <td>Email : </td>
-                <td>
-                    <input type="email" value="krish@gmail.com">
-                </td>
-            </tr>
+</section>
 
-            <tr>
-                <td>Phone Number :</td>
-                <td>
-                    <input type="tel" value="+91 9876543210">
-                </td>
-            </tr>
+<p id="eventsStatus" class="events-status"></p>
 
-            <tr>
-                <td>Department : </td>
-                <td>
-                    <select>
-                        <option selected>Computer Science</option>
-                        <option>Computer Engineering</option>
-                        <option>Information Technology</option>
-                        <option>Electronics</option>
-                        <option>Mechanical</option>
-                    </select>
-                </td>
-            </tr>
+<section class="events" id="eventsContainer">
 
-            <tr>
-                <td>Semester : </td>
-                <td>
-                    <select>
-                        <option selected>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                    </select>
-                </td>
-            </tr>
+</section>
 
-            <tr>
-                <td>Gender : </td>
-                <td>
-                    <input type="radio" name="gender"> Male
-                    <input type="radio" name="gender"> Female
-                </td>
-            </tr>
+<section class="events-pagination" id="eventsPagination">
 
-            <tr>
-                <td>Date of Birth : </td>
-                <td>
-                    <input type="date">
-                </td>
-            </tr>
+</section>
 
-            <tr>
-                <td>Address :</td>
-                <td>
-                    <textarea rows="4" cols="30">Anand, Gujarat</textarea>
-                </td>
-            </tr>
+<footer>
 
-            <tr>
-                <td>Upload Photo : </td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
+    <p>© 2026 StudentHub | All Rights Reserved</p>
 
-            <tr>
-                <td colspan="2" align="center"><br>
-                    <input type="submit" value="Save Changes">
-                    <input type="reset" value="Reset">
-                </td>
-            </tr>
+</footer>
 
-        </table>
-
-    </form>
-    <br>
-
-        <a href="profile.html"> Back to Profile</a>
+<script src="events-data.js"></script>
 
 </body>
 </html>
