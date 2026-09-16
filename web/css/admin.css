@@ -132,3 +132,82 @@ article{
     border-radius:8px;
     box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
+
+/* Student List (Search / Filter / Sort / Table / Pagination) */
+
+.student-list-controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    width:100%;
+    min-height:0;
+    margin:20px 0 0;
+    background:none;
+    padding:0;
+    border-left:none;
+    border-radius:0;
+    box-shadow:none;
+    text-align:left;
+}
+
+.student-list-controls input,
+.student-list-controls select{
+    padding:8px 12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.student-list-controls input{
+    flex:1;
+    min-width:200px;
+}
+
+.student-list-table{
+    width:100%;
+    margin-top:15px;
+    border-collapse:collapse;
+}
+
+.student-list-table th,
+.student-list-table td{
+    text-align:left;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    font-size:17px;
+}
+
+.student-list-table th{
+    background:#f0f2ff;
+    color:#222;
+}
+
+.student-list-pagination{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    width:100%;
+    min-height:0;
+    margin:15px 0 0;
+    background:none;
+    padding:0;
+    border-left:none;
+    border-radius:0;
+    box-shadow:none;
+    text-align:left;
+}
+
+.student-list-pagination button{
+    padding:6px 12px;
+    border:1px solid #5265f9;
+    background:white;
+    color:#5265f9;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.student-list-pagination button:hover,
+.student-list-pagination button.active-page{
+    background:#5265f9;
+    color:white;
+}
