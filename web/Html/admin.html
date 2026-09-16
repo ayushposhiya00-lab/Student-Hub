@@ -80,6 +80,39 @@ Admission Open 2026 • AI Workshop Registration Started • National Hackathon 
                 <li>Delete Student Records</li>
                 <li>Approve Student Registration</li>
             </ul>
+
+            <div class="student-list-controls">
+
+                <input type="text" id="studentSearch" placeholder="Search by name or email...">
+
+                <select id="studentCourseFilter">
+                    <option value="all">All Courses</option>
+                </select>
+
+                <select id="studentSort">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+
+            </div>
+
+            <p id="studentListStatus"></p>
+
+            <table id="studentListTable" class="student-list-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="studentListBody"></tbody>
+            </table>
+
+            <div id="studentListPagination" class="student-list-pagination"></div>
+
         </section>
 
             <h2>Course Management</h2>
@@ -152,6 +185,8 @@ Admission Open 2026 • AI Workshop Registration Started • National Hackathon 
     <footer align="center">
         <p>&copy; 2026 Student Hub | Admin Dashboard</p>
     </footer>
+
+    <script src="students-data.js"></script>
 
 </body>
 </html>
