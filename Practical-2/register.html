@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub Registration</title>
+
+    <link rel="stylesheet" href="../Practical-3/register.css">
+
+</head>
+
+<body>
+
+<header>
+
+<center>
+
+<br>
+<br>
+
+<img src="https://admission.charusat.ac.in/View%20Assets/MainPage/assets/charusat%20images/logo.png"
+     alt="StudentHub Logo"
+     width="120">
+
+<h1>StudentHub Portal</h1>
+
+<h3>Create Your Account</h3>
+
+<p>
+    Already have an account?
+    <a href="login.html">Login Here</a>
+</p>
+
+<hr>
+
+</center>
+
+</header>
+
+
+<form action="../Practical-7/process.php" method="POST">
+
+<center>
+
+<p><b>Registration Form</b></p>
+
+<table>
+
+<tr>
+    <td>
+        <label for="name">Full Name</label>
+    </td>
+
+    <td>
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter Full Name"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label for="email">Email</label>
+    </td>
+
+    <td>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter Email"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label for="mobile">Mobile</label>
+    </td>
+
+    <td>
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="Enter Mobile Number"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label for="password">Password</label>
+    </td>
+
+    <td>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter Password"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label for="confirm">Confirm Password</label>
+    </td>
+
+    <td>
+        <input type="password"
+               id="confirm"
+               name="confirm"
+               placeholder="Confirm Password"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label for="dob">Date of Birth</label>
+    </td>
+
+    <td>
+        <input type="date"
+               id="dob"
+               name="dob"
+               required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>Gender</td>
+
+    <td>
+
+        <input type="radio"
+               name="gender"
+               id="male"
+               value="Male"
+               required>
+
+        <label for="male">Male</label>
+
+
+        <input type="radio"
+               name="gender"
+               id="female"
+               value="Female">
+
+        <label for="female">Female</label>
+
+
+        <input type="radio"
+               name="gender"
+               id="other"
+               value="Other">
+
+        <label for="other">Other</label>
+
+    </td>
+</tr>
+
+
+<tr>
+
+    <td>
+        <label for="course">Course</label>
+    </td>
+
+    <td>
+
+        <select id="course"
+                name="course"
+                required>
+
+            <option value="">Select Course</option>
+
+            <option value="B.Tech CSE">
+                B.Tech CSE
+            </option>
+
+            <option value="B.Tech CE">
+                B.Tech CE
+            </option>
+
+            <option value="B.Tech IT">
+                B.Tech IT
+            </option>
+
+        </select>
+
+    </td>
+
+</tr>
+
+
+<tr>
+
+    <td>Skills</td>
+
+    <td>
+
+        <input type="checkbox"
+               name="skills[]"
+               value="C">
+        C
+
+        <input type="checkbox"
+               name="skills[]"
+               value="C++">
+        C++
+
+        <input type="checkbox"
+               name="skills[]"
+               value="Java">
+        Java
+
+        <input type="checkbox"
+               name="skills[]"
+               value="Python">
+        Python
+
+    </td>
+
+</tr>
+
+
+<tr>
+
+    <td>
+        <label for="address">Address</label>
+    </td>
+
+    <td>
+
+        <textarea id="address"
+                  name="address"
+                  rows="3"
+                  cols="25"
+                  placeholder="Enter Your Address"></textarea>
+
+    </td>
+
+</tr>
+
+
+<tr>
+
+    <td colspan="2" align="center">
+
+        <label for="terms">
+
+            <input type="checkbox"
+                   id="terms"
+                   name="terms"
+                   value="accepted"
+                   required>
+
+            I agree to the Terms & Conditions
+
+        </label>
+
+    </td>
+
+</tr>
+
+
+<tr>
+
+    <td colspan="2" align="center">
+
+        <button type="submit">
+            Register
+        </button>
+
+        <button type="reset">
+            Clear
+        </button>
+
+    </td>
+
+</tr>
+
+</table>
+
+</center>
+
+</form>
+
+
+<hr>
+
+<center>
+
+    <small>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </small>
+
+</center>
+
+
+<!-- <script src="../Practical-4&5/register.js"></script> -->
+
+</body>
+
+</html>
