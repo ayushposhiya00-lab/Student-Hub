@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Patel", "email": "aarav.patel@example.com", "course": "B.Tech CSE", "year": "2nd Year", "status": "Active" },
+  { "id": 2, "name": "Diya Shah", "email": "diya.shah@example.com", "course": "B.Tech IT", "year": "3rd Year", "status": "Active" },
+  { "id": 3, "name": "Krishna Mehta", "email": "krishna.mehta@example.com", "course": "B.Tech CE", "year": "1st Year", "status": "Pending" },
+  { "id": 4, "name": "Isha Trivedi", "email": "isha.trivedi@example.com", "course": "B.Tech CSE", "year": "4th Year", "status": "Active" },
+  { "id": 5, "name": "Yash Joshi", "email": "yash.joshi@example.com", "course": "B.Tech IT", "year": "2nd Year", "status": "Active" },
+  { "id": 6, "name": "Meera Desai", "email": "meera.desai@example.com", "course": "B.Tech CE", "year": "3rd Year", "status": "Pending" },
+  { "id": 7, "name": "Rohan Parikh", "email": "rohan.parikh@example.com", "course": "B.Tech CSE", "year": "1st Year", "status": "Active" },
+  { "id": 8, "name": "Anaya Pandya", "email": "anaya.pandya@example.com", "course": "B.Tech IT", "year": "4th Year", "status": "Active" },
+  { "id": 9, "name": "Devansh Rana", "email": "devansh.rana@example.com", "course": "B.Tech CE", "year": "2nd Year", "status": "Active" },
+  { "id": 10, "name": "Kavya Bhatt", "email": "kavya.bhatt@example.com", "course": "B.Tech CSE", "year": "3rd Year", "status": "Pending" },
+  { "id": 11, "name": "Aryan Solanki", "email": "aryan.solanki@example.com", "course": "B.Tech IT", "year": "1st Year", "status": "Active" },
+  { "id": 12, "name": "Sanya Chauhan", "email": "sanya.chauhan@example.com", "course": "B.Tech CE", "year": "4th Year", "status": "Active" },
+  { "id": 13, "name": "Vivaan Thakkar", "email": "vivaan.thakkar@example.com", "course": "B.Tech CSE", "year": "2nd Year", "status": "Active" },
+  { "id": 14, "name": "Riya Vora", "email": "riya.vora@example.com", "course": "B.Tech IT", "year": "3rd Year", "status": "Pending" },
+  { "id": 15, "name": "Om Chokshi", "email": "om.chokshi@example.com", "course": "B.Tech CE", "year": "1st Year", "status": "Active" }
+]

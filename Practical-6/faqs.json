@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "How do I register on StudentHub?",
+    "answer": "Click on the <b>Register</b> page, fill in your details, and submit the registration form.",
+    "category": "Account"
+  },
+  {
+    "id": 2,
+    "question": "How do I login?",
+    "answer": "Enter your registered email and password on the Login page.",
+    "category": "Account"
+  },
+  {
+    "id": 3,
+    "question": "Can I edit my profile?",
+    "answer": "Yes. Go to the Profile page and click the <b>Edit Profile</b> button.",
+    "category": "Account"
+  },
+  {
+    "id": 4,
+    "question": "How can I check my attendance?",
+    "answer": "Login to your Dashboard and open the Attendance section.",
+    "category": "Dashboard"
+  },
+  {
+    "id": 5,
+    "question": "Where can I see upcoming events?",
+    "answer": "Visit the Events page to view all upcoming university events.",
+    "category": "Events"
+  },
+  {
+    "id": 6,
+    "question": "I forgot my password. What should I do?",
+    "answer": "Contact the administrator or use the Forgot Password option (if available).",
+    "category": "Account"
+  },
+  {
+    "id": 7,
+    "question": "How can I contact StudentHub?",
+    "answer": "Visit the Contact page or email us at <b>studenthub@gmail.com</b>.",
+    "category": "General"
+  },
+  {
+    "id": 8,
+    "question": "How do I reset my password?",
+    "answer": "Currently a password reset must be requested from the administrator via the Contact page.",
+    "category": "Account"
+  },
+  {
+    "id": 9,
+    "question": "Is StudentHub free to use?",
+    "answer": "Yes, StudentHub is completely free for all enrolled students.",
+    "category": "General"
+  },
+  {
+    "id": 10,
+    "question": "Can I access StudentHub on mobile?",
+    "answer": "Yes, the portal is fully responsive and works on mobile browsers.",
+    "category": "General"
+  },
+  {
+    "id": 11,
+    "question": "How do I give feedback?",
+    "answer": "Visit the Feedback page and submit your comments and rating.",
+    "category": "Feedback"
+  },
+  {
+    "id": 12,
+    "question": "Who can register on StudentHub?",
+    "answer": "Any currently enrolled student of the college can register using their details.",
+    "category": "Account"
+  },
+  {
+    "id": 13,
+    "question": "How do I switch between light and dark mode?",
+    "answer": "Use the theme toggle button available on supported pages.",
+    "category": "General"
+  },
+  {
+    "id": 14,
+    "question": "Can administrators add new events?",
+    "answer": "Yes, admins can create and manage events from the Admin Panel.",
+    "category": "Events"
+  },
+  {
+    "id": 15,
+    "question": "What should I do if a page is not loading correctly?",
+    "answer": "Refresh the page or contact support via the Contact page.",
+    "category": "General"
+  }
+]
