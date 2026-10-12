@@ -1,0 +1,56 @@
+[
+    {
+        "name": "het bhimani",
+        "email": "25dit007@charusat.edu.in",
+        "mobile": "9274030334",
+        "password": "$2y$10$JRkSQVD0xYWmCZAfD97FU.798lE65FZbbAixsK0D6As418\/wMaqyO",
+        "dob": "2026-09-02",
+        "gender": "Male",
+        "course": "B.Tech IT",
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Nagpur",
+        "skills": [
+            "C++"
+        ],
+        "address": "pune",
+        "termsAccepted": true,
+        "registeredAt": "2026-09-26 14:36:52"
+    },
+    {
+        "name": "het bhimani",
+        "email": "25dit007@charusat.edu.in",
+        "mobile": "9274030334",
+        "password": "$2y$10$Kyrx4lmCFs5ZyApHY\/X\/f.onADJHGmJJRf.oyeLkRzOKdabcJwdjm",
+        "dob": "2026-09-28",
+        "gender": "Male",
+        "course": "B.Tech CSE",
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Surat",
+        "skills": [
+            "Java"
+        ],
+        "address": "ddd",
+        "termsAccepted": true,
+        "registeredAt": "2026-09-29 11:45:30"
+    },
+    {
+        "name": "het bhimani",
+        "email": "25dit007@charusat.edu.in",
+        "mobile": "9274030334",
+        "password": "$2y$10$TmoONWr7vq33j2d1IsrHyurXCbuja\/jwmuFVGZx9iLmN870.UHCjO",
+        "dob": "2026-09-10",
+        "gender": "Male",
+        "course": "B.Tech IT",
+        "country": "Canada",
+        "state": "Ontario",
+        "city": "Toronto",
+        "skills": [
+            "C++"
+        ],
+        "address": "qwerr",
+        "termsAccepted": true,
+        "registeredAt": "2026-09-29 11:48:03"
+    }
+]
